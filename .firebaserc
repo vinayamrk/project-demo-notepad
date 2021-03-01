@@ -1,0 +1,18 @@
+{
+  "targets": {
+    "notes-app-fc7ac": {
+      "hosting": {
+        "my-app": [
+          "notes-app-fc7ac"
+        ]
+      }
+    },
+    "notes-74d7b": {
+      "hosting": {
+        "my-app": [
+          "notes-74d7b"
+        ]
+      }
+    }
+  }
+}
