@@ -17,6 +17,7 @@ span {
       border-bottom: 1px solid #4dd0e1;
       box-shadow: 0 1px 0 0 #4dd0e1;
       width: 40%;
+      position: fixed;
       }
     a:link, a:visited {
         background-color: #a79ddf;
@@ -46,20 +47,32 @@ span {
       border: 0px solid rgb(240, 238, 243);
       width:100%
     }
+    .floating-add-button{
+      position: fixed;
+      right:60px;
+      top: 120px;
+      width:150px;
+      background-color: rgb(78, 50, 129);
+    
+    }
+   
 }
 app-note-card{
   display: block;
   margin-bottom: 25px;
 }
-.floating-add-button{
-  position: fixed;
-  right:60px;
-  top: 120px;
-  width:150px;
-  background-color: rgb(78, 50, 129);
 
-}
 #note{
   overflow-y: scroll;
-  max-height: 500px;
+  max-height: 450px;
+}
+#bt{
+  color: aliceblue;
+  position: fixed;
+  right:45%;
+  bottom: 20px;
+  height: 40px;
+  width:150px;
+  background-color: rgb(78, 50, 129);
+  font-size: large;
 }

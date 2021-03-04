@@ -1,0 +1,36 @@
+.list{
+display: flex;
+flex-direction: row;
+float: left;
+padding: 40px;
+font-size: 25px;
+
+}
+
+.card{
+padding: 40px;
+margin-right: 20px;
+font-size: 25px;
+width: 320px;
+height: 300px;
+box-shadow: rgb(121, 122, 122);
+border-radius: 5px;
+background-color:rgb(238, 238, 231);
+}
+
+.email{
+    font-size: large;
+    padding: 10px;
+}
+.label{
+    text-align: center;
+    font-size: 30px;
+    margin: auto;
+    margin-top: 40px;
+}
+#bt{
+   font-size: large;
+}
+h4{
+    font-size: large;
+}

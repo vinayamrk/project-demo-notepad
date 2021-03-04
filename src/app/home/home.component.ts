@@ -75,6 +75,11 @@ relevantNotes(query : any) : Array<Note>{
   return relevantNotes;
 }
 
+deleteall(){
+  let index=this.filteredNotes.length;
+  for(let i=index;i>0;i--){
+    this.filteredNotes.pop();
+  }
 
-
+}
 }

@@ -9,6 +9,9 @@ import { NoteCardsComponent } from './note-cards/note-cards.component';
 import { NoteDetailsComponent } from './note-details/note-details.component';
 import { DragDropModule } from '@angular/cdk/drag-drop';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AngularFireModule } from '@angular/fire';
+ import { AngularFirestoreModule } from '@angular/fire/firestore';
+ import { environment } from '../environments/environment';
 
 
 @NgModule({
@@ -24,7 +27,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     FormsModule,
     CKEditorModule,
     DragDropModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AngularFireModule.initializeApp(environment.firebaseConfig),
+         AngularFirestoreModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

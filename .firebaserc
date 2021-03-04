@@ -14,5 +14,8 @@
         ]
       }
     }
+  },
+  "projects": {
+    "default": "kanbanfire-4b1ec"
   }
 }

@@ -3,6 +3,7 @@ import {NgForm} from '@angular/forms';
 import { ActivatedRoute, Params, Router } from '@angular/router';
 import { Note } from 'src/app/shared/note.model';
 import { NotesService } from '../shared/notes.service';
+import Swal from 'sweetalert2';
 @Component({
   selector: 'app-note-details',
   templateUrl: './note-details.component.html',
@@ -48,7 +49,21 @@ onSubmit(form: NgForm){
  
  cancel()
  {
-  this.router.navigateByUrl('/'); 
+  Swal.fire({
+    title: 'Are you sure?',
+    text: 'You will not be able to recover this note!',
+    icon: 'warning',
+    showCancelButton: true,
+    confirmButtonText: 'Yes, cancel it!',
+    cancelButtonText: 'No, keep it'
+  }).then((result) => {
+    if (result.value) {
+
+      this.router.navigateByUrl('/');
+    } else if (result.dismiss === Swal.DismissReason.cancel) {
+    }
+  }) 
+
  }
 
 
