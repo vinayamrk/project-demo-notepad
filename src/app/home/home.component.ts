@@ -1,4 +1,5 @@
 //import { CdkDragDrop,moveItemInArray, transferArrayItem } from '@angular/cdk/drag-drop';
+import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
 import { Note } from '../shared/note.model';
 import { NotesService } from '../shared/notes.service';
@@ -81,5 +82,9 @@ deleteall(){
     this.filteredNotes.pop();
   }
 
+}
+
+drop(event: CdkDragDrop<string[]>){
+  moveItemInArray(this.filteredNotes,event.previousIndex,event.currentIndex);
 }
 }

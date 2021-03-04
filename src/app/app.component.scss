@@ -1,15 +1,21 @@
-.logo{
+#logo{
     font-size: x-large;
+    background-color: rgb(78, 50, 129);
+    box-shadow: rgb(78, 50, 129);
 }
 .container{
     font-size: x-large;
+    margin-bottom: 5px;
 }
 nav{
     font-size: x-large;
     cursor: pointer;
 }
 
-.link{
+#link{
     position:fixed;
     right: 20px;
+    background-color: rgb(78, 50, 129);
+    box-shadow: rgb(78, 50, 129);
+    font-size: x-large;
 }

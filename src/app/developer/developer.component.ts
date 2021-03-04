@@ -13,8 +13,8 @@ export class DeveloperComponent implements OnInit {
 
   ngOnInit(): void {
   }
- back(){
+back(){
   this.router.navigateByUrl('/');
- }
+}
 
 }

@@ -28,8 +28,15 @@ background-color:rgb(238, 238, 231);
     margin: auto;
     margin-top: 40px;
 }
-#bt{
-   font-size: large;
+.bt{
+    color: aliceblue;
+  position: fixed;
+  right:45%;
+  bottom: 20px;
+  height: 40px;
+  width:150px;
+  background-color: rgb(78, 50, 129);
+  font-size: large;
 }
 h4{
     font-size: large;
