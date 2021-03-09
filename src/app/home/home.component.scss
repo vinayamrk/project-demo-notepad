@@ -5,10 +5,15 @@ span {
     padding: .3em .8em;
     cursor: pointer;
 }
+.header{
+      color: white;
+      position:fixed;
+      top: 0px;
+}
 
 .play-container {
     padding: 1.2em;
-    width: 100%;
+    width: 85%;
     height: 100%;
     margin-bottom: 1em;
     top: 100%;
@@ -35,11 +40,12 @@ span {
       .notes-list{
         display: flex;
         margin-top: 25px ;
-         margin-bottom: 25px;
+         margin-bottom: 10px;
          margin-left: 25px;
          flex-direction: column;
          float: bottom;
          
+
         
        }
     
@@ -48,9 +54,9 @@ span {
       width:100%
     }
     .floating-add-button{
-      position: fixed;
-      right:30px;
-      top: 120px;
+      position: absolute;
+      right:50px;
+      top: 115px;
       width:150px;
       background-color: rgb(78, 50, 129);
     
@@ -64,15 +70,35 @@ app-note-card{
 
 #note{
   overflow-y: scroll;
-  max-height: 450px;
+  max-height: 500px;
 }
 #bt{
   color: aliceblue;
-  position: fixed;
+  position:absolute;
   right:45%;
-  bottom: 20px;
+bottom: 0;
   height: 40px;
   width:150px;
   background-color: rgb(78, 50, 129);
   font-size: large;
+}
+.container{
+  font-size: x-large;
+  margin-bottom: 5px;
+}
+a{
+  position: fixed;
+  top:30px;
+  font-size: 25px;
+      right:30px;
+      width:150px;
+      color: white;
+}
+#logo{
+  font-size: x-large;
+  background-color: rgb(78, 50, 129);
+  box-shadow: rgb(78, 50, 129);
+}
+.field{
+  padding-top: 20px;
 }

@@ -3,6 +3,8 @@ import { CdkDragDrop, moveItemInArray } from '@angular/cdk/drag-drop';
 import { Component, ElementRef, EventEmitter, OnInit, Output, ViewChild } from '@angular/core';
 import { Note } from '../shared/note.model';
 import { NotesService } from '../shared/notes.service';
+import { AuthService } from '../auth/auth.service';
+import { Router } from '@angular/router'; 
 
 
 @Component({
@@ -19,7 +21,7 @@ export class HomeComponent implements OnInit {
   @ViewChild('filterInput')
   filterInputElRef!: ElementRef<HTMLInputElement>;
 
-  constructor(private notesService: NotesService) { }
+  constructor(private notesService: NotesService,public authservice: AuthService, private router: Router) { }
 
   ngOnInit() {
     this.notes = this.notesService.getAll();

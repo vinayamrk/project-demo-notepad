@@ -12,6 +12,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AngularFireModule } from '@angular/fire';
  import { AngularFirestoreModule } from '@angular/fire/firestore';
  import { environment } from '../environments/environment';
+import { RegistrationComponent } from './auth/registration/registration.component';
+import { LoginComponent } from './auth/login/login.component';
 
 
 @NgModule({
@@ -20,6 +22,8 @@ import { AngularFireModule } from '@angular/fire';
     HomeComponent,
     NoteDetailsComponent,
     NoteCardsComponent,
+    RegistrationComponent,
+    LoginComponent,
   ],
   imports: [
     BrowserModule,
